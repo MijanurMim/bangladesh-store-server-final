@@ -10,7 +10,7 @@ var morgan = require("morgan");
 // app.use(express.json());
 
 let corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: "*",
 };
 app.use(cors(corsOptions));
 app.use(cookieParser());
