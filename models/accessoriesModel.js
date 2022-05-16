@@ -12,6 +12,11 @@ const accessoriesSchema = new mongoose.Schema({
     required: [true, "Please Enter Accessories Description"],
   },
 
+  accessoryProductId: {
+    type: String,
+    required: [true, "Please Enter Product Id"],
+  },
+
   price: {
     type: Number,
     required: [true, "Please Enter Accessories Price"],
@@ -35,11 +40,11 @@ const accessoriesSchema = new mongoose.Schema({
     required: [true, "Please Enter Accessories Category"],
   },
 
-  Stock: {
-    type: Number,
-    required: [true, "Please Enter Accessories Stock"],
-    default: 1,
-  },
+  // Stock: {
+  //   type: Number,
+  //   required: [true, "Please Enter Accessories Stock"],
+  //   default: 1,
+  // },
 
   createdAt: {
     type: Date,
