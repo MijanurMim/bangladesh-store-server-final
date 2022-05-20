@@ -9,7 +9,7 @@ const accessoriesSchema = new mongoose.Schema({
 
   description: {
     type: String,
-    required: [true, "Please Enter Accessories Description"],
+    // required: [true, "Please Enter Accessories Description"],
   },
 
   accessoryProductId: {
